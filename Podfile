@@ -7,7 +7,8 @@ target 'QuestionApp' do
 
 
   # Pods for QuestionApp
-
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
   pod 'Firebase', '>= 2.5.0'
   target 'QuestionAppTests' do
     inherit! :search_paths

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20ACF460114837DD8AEE1E6D /* Pods_QuestionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9B3420D7A5608D8E21396F /* Pods_QuestionAppUITests.framework */; };
 		7320F3F205B669D63EAFA07B /* Pods_QuestionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */; };
+		7E34C2311E2058080076B272 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E34C2301E2058080076B272 /* GoogleService-Info.plist */; };
 		7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */; };
 		7E66887F1E1F117A00D1F670 /* DrawQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */; };
 		7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */; };
@@ -21,6 +23,7 @@
 		7E730C3E1E035691009D72E1 /* QuestionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C3D1E035691009D72E1 /* QuestionAppUITests.swift */; };
 		7EB972991E2041C500F1B986 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB972981E2041C500F1B986 /* DataService.swift */; };
 		7ECA8B2F1E206C3800D4FA3A /* DrawLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */; };
+		DA27B95AF583FA45AAE2AC62 /* Pods_QuestionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F7F9E3E2B87FBF634A2BCE /* Pods_QuestionAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 /* Begin PBXFileReference section */
 		227C8BF87F28299999FB8AFA /* Pods-QuestionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionApp/Pods-QuestionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F7F9E3E2B87FBF634A2BCE /* Pods_QuestionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E34C2301E2058080076B272 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionKit.swift; sourceTree = SOURCE_ROOT; };
 		7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawQuestion.swift; sourceTree = "<group>"; };
 		7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawYesButton.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		7E730C3F1E035691009D72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB972981E2041C500F1B986 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLogin.swift; sourceTree = "<group>"; };
+		9E9B3420D7A5608D8E21396F /* Pods_QuestionAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F363178141E2FA349523E /* Pods-QuestionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppUITests/Pods-QuestionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D16AABB56055723C1C7D22D5 /* Pods-QuestionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppTests/Pods-QuestionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB0806D9D4C8F0291430E4B7 /* Pods-QuestionAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppTests/Pods-QuestionAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA27B95AF583FA45AAE2AC62 /* Pods_QuestionAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20ACF460114837DD8AEE1E6D /* Pods_QuestionAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */,
+				72F7F9E3E2B87FBF634A2BCE /* Pods_QuestionAppTests.framework */,
+				9E9B3420D7A5608D8E21396F /* Pods_QuestionAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +151,7 @@
 		7E730C1C1E035690009D72E1 /* QuestionApp */ = {
 			isa = PBXGroup;
 			children = (
+				7E34C2301E2058080076B272 /* GoogleService-Info.plist */,
 				7E730C1D1E035690009D72E1 /* AppDelegate.swift */,
 				7E730C1F1E035690009D72E1 /* ViewController.swift */,
 				7E730C211E035690009D72E1 /* Main.storyboard */,
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E730C281E035690009D72E1 /* LaunchScreen.storyboard in Resources */,
+				7E34C2311E2058080076B272 /* GoogleService-Info.plist in Resources */,
 				7E730C251E035690009D72E1 /* Assets.xcassets in Resources */,
 				7E730C231E035690009D72E1 /* Main.storyboard in Resources */,
 			);
