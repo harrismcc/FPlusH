@@ -12,7 +12,6 @@ import UIKit
 @IBDesignable
 
 class DrawLogin: UIView{
-    override func draw(_ rect: CGRect) {
-        QuestionKit.drawDrawLoginScreen()
-    }
+
+    
 }

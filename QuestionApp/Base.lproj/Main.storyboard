@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" id="BYZ-38-t0r" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,32 +22,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-es-CFi" customClass="DrawLogin" customModule="QuestionApp" customModuleProvider="target">
-                                <rect key="frame" x="54" y="122" width="267" height="401"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prS-mw-Sg6">
+                                <rect key="frame" x="162" y="556" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
+                                <state key="normal" title="Bypass"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="4nW-nc-6P4" appends="YES" id="wZe-Qv-sws"/>
+                                    <action selector="bypassButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="co1-Qq-q1e"/>
                                 </connections>
-                            </view>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.12549019607843137" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="bJg-V4-ucU" kind="show" identifier="loginSegue" id="GbW-hs-iie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="4nW-nc-6P4">
-                    <connections>
-                        <segue destination="bJg-V4-ucU" kind="show" id="xM0-xs-4zh"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-60" y="124"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="01v-C0-Wck">
             <objects>
-                <viewController id="bJg-V4-ucU" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" id="bJg-V4-ucU" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bJN-jv-hRX"/>
                         <viewControllerLayoutGuide type="bottom" id="ANY-Or-MFl"/>
