@@ -10,6 +10,10 @@
 		36379E913B7CFCB452F5A63C /* Pods_QuestionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4744F3252FC3777C492A21B /* Pods_QuestionAppUITests.framework */; };
 		4AEC5844203AAC735204E167 /* Pods_QuestionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267588B294E81191BEE0FEA3 /* Pods_QuestionAppTests.framework */; };
 		7320F3F205B669D63EAFA07B /* Pods_QuestionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */; };
+		7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */; };
+		7E66887F1E1F117A00D1F670 /* DrawQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */; };
+		7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */; };
+		7E6688831E1F187600D1F670 /* DrawNoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6688821E1F187600D1F670 /* DrawNoButton.swift */; };
 		7E730C1E1E035690009D72E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C1D1E035690009D72E1 /* AppDelegate.swift */; };
 		7E730C201E035690009D72E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C1F1E035690009D72E1 /* ViewController.swift */; };
 		7E730C231E035690009D72E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E730C211E035690009D72E1 /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		227C8BF87F28299999FB8AFA /* Pods-QuestionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionApp/Pods-QuestionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		267588B294E81191BEE0FEA3 /* Pods_QuestionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionKit.swift; sourceTree = SOURCE_ROOT; };
+		7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawQuestion.swift; sourceTree = "<group>"; };
+		7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawYesButton.swift; sourceTree = "<group>"; };
+		7E6688821E1F187600D1F670 /* DrawNoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawNoButton.swift; sourceTree = "<group>"; };
 		7E730C1A1E035690009D72E1 /* QuestionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E730C1D1E035690009D72E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E730C1F1E035690009D72E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 				7E730C1D1E035690009D72E1 /* AppDelegate.swift */,
 				7E730C1F1E035690009D72E1 /* ViewController.swift */,
 				7E730C211E035690009D72E1 /* Main.storyboard */,
+				7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */,
+				7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */,
+				7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */,
+				7E6688821E1F187600D1F670 /* DrawNoButton.swift */,
 				7E730C241E035690009D72E1 /* Assets.xcassets */,
 				7E730C261E035690009D72E1 /* LaunchScreen.storyboard */,
 				7E730C291E035690009D72E1 /* Info.plist */,
@@ -242,6 +254,7 @@
 				TargetAttributes = {
 					7E730C191E035690009D72E1 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 79VAY98V4U;
 						ProvisioningStyle = Automatic;
 					};
 					7E730C2D1E035690009D72E1 = {
@@ -448,6 +461,10 @@
 			files = (
 				7E730C201E035690009D72E1 /* ViewController.swift in Sources */,
 				7E730C1E1E035690009D72E1 /* AppDelegate.swift in Sources */,
+				7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */,
+				7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */,
+				7E6688831E1F187600D1F670 /* DrawNoButton.swift in Sources */,
+				7E66887F1E1F117A00D1F670 /* DrawQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +615,9 @@
 			baseConfigurationReference = 227C8BF87F28299999FB8AFA /* Pods-QuestionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79VAY98V4U;
 				INFOPLIST_FILE = QuestionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HPlusF.QuestionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,7 +630,9 @@
 			baseConfigurationReference = E29C206EFAFEF21521A81AE7 /* Pods-QuestionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79VAY98V4U;
 				INFOPLIST_FILE = QuestionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HPlusF.QuestionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,6 +717,7 @@
 				7E730C441E035691009D72E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E730C451E035691009D72E1 /* Build configuration list for PBXNativeTarget "QuestionAppTests" */ = {
 			isa = XCConfigurationList;
@@ -704,6 +726,7 @@
 				7E730C471E035691009D72E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E730C481E035691009D72E1 /* Build configuration list for PBXNativeTarget "QuestionAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +735,7 @@
 				7E730C4A1E035691009D72E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

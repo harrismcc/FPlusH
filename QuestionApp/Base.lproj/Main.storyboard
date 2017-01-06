@@ -45,6 +45,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-e0-FDT">
                                 <rect key="frame" x="163" y="178" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="bJg-V4-ucU" kind="presentation" modalTransitionStyle="flipHorizontal" id="8dE-kL-C0U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,6 +69,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="01v-C0-Wck">
+            <objects>
+                <viewController id="bJg-V4-ucU" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJN-jv-hRX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ANY-Or-MFl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jH2-8f-VoK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-RM-0GQ" customClass="DrawYesButton" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="398" width="157" height="35"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="0.12549019607843137" blue="0.078431372549019607" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="313-r5-hjA"/>
+                                    <constraint firstAttribute="height" constant="35" id="bD1-wo-4qN"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hs5-VY-xCD" appends="YES" id="RHV-Vb-4OY"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-k7-YEq" customClass="DrawNoButton" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="193" y="398" width="157" height="35"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.12549019610000001" blue="0.078431372550000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="BDW-Lf-dYY"/>
+                                    <constraint firstAttribute="height" constant="35" id="efP-os-HEM"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r8T-0Z-k8u" appends="YES" id="uKt-9V-pUN"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwJ-ZE-Z7f" customClass="DrawQuestion" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="135" width="326" height="255"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="0.12549019607843137" blue="0.078431372549019607" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="g7b-8H-BdX"/>
+                                    <constraint firstAttribute="width" constant="326" id="iEC-Dj-GRZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.12549019607843137" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cYT-k7-YEq" firstAttribute="leading" secondItem="aZj-RM-0GQ" secondAttribute="trailing" constant="12" id="DSh-WG-Jn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cYT-k7-YEq" secondAttribute="trailing" constant="9" id="DhO-C5-KH0"/>
+                            <constraint firstItem="kwJ-ZE-Z7f" firstAttribute="centerX" secondItem="jH2-8f-VoK" secondAttribute="centerX" id="fdW-Dv-LnZ"/>
+                            <constraint firstItem="aZj-RM-0GQ" firstAttribute="leading" secondItem="jH2-8f-VoK" secondAttribute="leadingMargin" constant="8" id="kNq-Hf-N7C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZj-RM-0GQ" secondAttribute="trailing" constant="178" id="mID-FV-2fz"/>
+                            <constraint firstItem="cYT-k7-YEq" firstAttribute="top" secondItem="kwJ-ZE-Z7f" secondAttribute="bottom" constant="8" id="rJT-xr-VDm"/>
+                            <constraint firstItem="kwJ-ZE-Z7f" firstAttribute="top" secondItem="bJN-jv-hRX" secondAttribute="bottom" constant="115" id="svD-cM-VNX"/>
+                            <constraint firstItem="aZj-RM-0GQ" firstAttribute="top" secondItem="kwJ-ZE-Z7f" secondAttribute="bottom" constant="8" id="xGF-4R-wmM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mHi-tF-kDb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="in7-c8-TJJ" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hs5-VY-xCD">
+                    <connections>
+                        <outlet property="delegate" destination="aZj-RM-0GQ" id="TSe-0s-6sl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r8T-0Z-k8u"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
