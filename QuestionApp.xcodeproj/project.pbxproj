@@ -22,6 +22,7 @@
 		7E730C331E035691009D72E1 /* QuestionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C321E035691009D72E1 /* QuestionAppTests.swift */; };
 		7E730C3E1E035691009D72E1 /* QuestionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C3D1E035691009D72E1 /* QuestionAppUITests.swift */; };
 		7EB972991E2041C500F1B986 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB972981E2041C500F1B986 /* DataService.swift */; };
+		7EB9729B1E20461700F1B986 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB9729A1E20461700F1B986 /* FBSDKLoginKit.framework */; };
 		7ECA8B2F1E206C3800D4FA3A /* DrawLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		7E730C3D1E035691009D72E1 /* QuestionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAppUITests.swift; sourceTree = "<group>"; };
 		7E730C3F1E035691009D72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB972981E2041C500F1B986 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7EB9729A1E20461700F1B986 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.18.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLogin.swift; sourceTree = "<group>"; };
 		B77F363178141E2FA349523E /* Pods-QuestionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppUITests/Pods-QuestionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D16AABB56055723C1C7D22D5 /* Pods-QuestionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppTests/Pods-QuestionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB9729B1E20461700F1B986 /* FBSDKLoginKit.framework in Frameworks */,
 				7320F3F205B669D63EAFA07B /* Pods_QuestionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +120,7 @@
 		3E48CA23D2C965139681BBBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EB9729A1E20461700F1B986 /* FBSDKLoginKit.framework */,
 				339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */,
 				267588B294E81191BEE0FEA3 /* Pods_QuestionAppTests.framework */,
 				E4744F3252FC3777C492A21B /* Pods_QuestionAppUITests.framework */,
