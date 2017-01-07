@@ -10,23 +10,16 @@ import UIKit
 import Firebase
 import FacebookLogin
 import FacebookCore
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        FBSDKAppEvents.activateApp()
         
-        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email, .userFriends ])
-        loginButton.center = view.center
-        view.addSubview(loginButton)
-        
-        if AccessToken.current != nil {
-            // User is logged in, use 'accessToken' here.
-            
-            self.performSegue(withIdentifier: "loginSegue", sender: nil)
-        }
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +27,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func LoginButton(_ sender: Any) {
+        let facebookLogin = FBSDKLoginManager()
+        print("Logging In")
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler:{(facebookResult, facebookError) -> Void in
+            if facebookError != nil { print("Facebook login failed. Error  (facebookError)")
+            } else if (facebookResult?.isCancelled)! { print("Facebook login was cancelled.")
+            } else { print("You’re inz ;)")}
+        });    }
+
+
     @IBAction func bypassButtonPressed(_ sender: Any) {
+        
+        //BYPASS BUTTON GET RID OF THIS BEFORE REALEASE
+
         self.performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     

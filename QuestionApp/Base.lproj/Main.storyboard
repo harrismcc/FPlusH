@@ -22,9 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prS-mw-Sg6">
-                                <rect key="frame" x="162" y="556" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEF-Su-kO4">
+                                <rect key="frame" x="166" y="285" width="42" height="19"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zd9-eR-2ee"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prS-mw-Sg6">
+                                <rect key="frame" x="162" y="545" width="50" height="30"/>
                                 <state key="normal" title="Bypass"/>
                                 <connections>
                                     <action selector="bypassButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="co1-Qq-q1e"/>
@@ -32,6 +38,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.12549019607843137" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="prS-mw-Sg6" secondAttribute="trailing" constant="147" id="De5-OK-YSp"/>
+                            <constraint firstItem="prS-mw-Sg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="146" id="J7v-zS-La7"/>
+                            <constraint firstItem="sEF-Su-kO4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="Ox4-No-p2B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="prS-mw-Sg6" secondAttribute="bottom" constant="92" id="Qfh-8M-7M9"/>
+                            <constraint firstItem="prS-mw-Sg6" firstAttribute="top" secondItem="sEF-Su-kO4" secondAttribute="bottom" constant="230" id="lnC-ka-DWm"/>
+                            <constraint firstItem="sEF-Su-kO4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="rUd-f7-7AV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sEF-Su-kO4" secondAttribute="trailing" constant="151" id="u2Z-qg-n3y"/>
+                            <constraint firstItem="prS-mw-Sg6" firstAttribute="top" secondItem="sEF-Su-kO4" secondAttribute="bottom" constant="241" id="uJb-pb-fHH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="bJg-V4-ucU" kind="show" identifier="loginSegue" id="GbW-hs-iie"/>
