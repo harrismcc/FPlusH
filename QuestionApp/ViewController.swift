@@ -24,12 +24,18 @@ class ViewController: UIViewController {
         
         if let accessToken = AccessToken.current {
             // User is logged in, use 'accessToken' here.
+            
             print("YOU ARE IN BOI")
             print(accessToken)
             
-            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "loginSegue", sender: self)
+            }
+            
+            
+            
+            
         }
-
         FBSDKAppEvents.activateApp()
         
     }
@@ -40,15 +46,7 @@ class ViewController: UIViewController {
     }
 
 
-    
 
-    @IBAction func bypassButtonPressed(_ sender: Any) {
-        
-        //BYPASS BUTTON GET RID OF THIS BEFORE REALEASE
-
-        self.performSegue(withIdentifier: "loginSegue", sender: nil)
-    }
-    
 
 }
 

@@ -10,6 +10,7 @@
 		20ACF460114837DD8AEE1E6D /* Pods_QuestionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9B3420D7A5608D8E21396F /* Pods_QuestionAppUITests.framework */; };
 		7320F3F205B669D63EAFA07B /* Pods_QuestionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */; };
 		7E34C2311E2058080076B272 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E34C2301E2058080076B272 /* GoogleService-Info.plist */; };
+		7E3C52C51E21A7AD005A9776 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C52C41E21A7AD005A9776 /* MainViewController.swift */; };
 		7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */; };
 		7E66887F1E1F117A00D1F670 /* DrawQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */; };
 		7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */; };
@@ -48,6 +49,7 @@
 		339BFB8AEF998D1E59B441EA /* Pods_QuestionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F7F9E3E2B87FBF634A2BCE /* Pods_QuestionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E34C2301E2058080076B272 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E3C52C41E21A7AD005A9776 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionKit.swift; sourceTree = SOURCE_ROOT; };
 		7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawQuestion.swift; sourceTree = "<group>"; };
 		7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawYesButton.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				7E34C2301E2058080076B272 /* GoogleService-Info.plist */,
 				7E730C1D1E035690009D72E1 /* AppDelegate.swift */,
 				7E730C1F1E035690009D72E1 /* ViewController.swift */,
+				7E3C52C41E21A7AD005A9776 /* MainViewController.swift */,
 				7E730C211E035690009D72E1 /* Main.storyboard */,
 				7EB972981E2041C500F1B986 /* DataService.swift */,
 				7E66887C1E1F0ECC00D1F670 /* QuestionKit.swift */,
@@ -475,6 +478,7 @@
 				7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */,
 				7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */,
 				7E6688831E1F187600D1F670 /* DrawNoButton.swift in Sources */,
+				7E3C52C51E21A7AD005A9776 /* MainViewController.swift in Sources */,
 				7E66887F1E1F117A00D1F670 /* DrawQuestion.swift in Sources */,
 				7EB972991E2041C500F1B986 /* DataService.swift in Sources */,
 			);
