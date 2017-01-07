@@ -21,6 +21,7 @@
 		7E730C281E035690009D72E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E730C261E035690009D72E1 /* LaunchScreen.storyboard */; };
 		7E730C331E035691009D72E1 /* QuestionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C321E035691009D72E1 /* QuestionAppTests.swift */; };
 		7E730C3E1E035691009D72E1 /* QuestionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E730C3D1E035691009D72E1 /* QuestionAppUITests.swift */; };
+		7ECA8B2F1E206C3800D4FA3A /* DrawLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7E730C391E035691009D72E1 /* QuestionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E730C3D1E035691009D72E1 /* QuestionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAppUITests.swift; sourceTree = "<group>"; };
 		7E730C3F1E035691009D72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLogin.swift; sourceTree = "<group>"; };
 		B77F363178141E2FA349523E /* Pods-QuestionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppUITests/Pods-QuestionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D16AABB56055723C1C7D22D5 /* Pods-QuestionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppTests/Pods-QuestionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB0806D9D4C8F0291430E4B7 /* Pods-QuestionAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionAppTests/Pods-QuestionAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				7E66887E1E1F117A00D1F670 /* DrawQuestion.swift */,
 				7E6688801E1F12FF00D1F670 /* DrawYesButton.swift */,
 				7E6688821E1F187600D1F670 /* DrawNoButton.swift */,
+				7ECA8B2E1E206C3800D4FA3A /* DrawLogin.swift */,
 				7E730C241E035690009D72E1 /* Assets.xcassets */,
 				7E730C261E035690009D72E1 /* LaunchScreen.storyboard */,
 				7E730C291E035690009D72E1 /* Info.plist */,
@@ -460,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E730C201E035690009D72E1 /* ViewController.swift in Sources */,
+				7ECA8B2F1E206C3800D4FA3A /* DrawLogin.swift in Sources */,
 				7E730C1E1E035690009D72E1 /* AppDelegate.swift in Sources */,
 				7E66887D1E1F0ECC00D1F670 /* QuestionKit.swift in Sources */,
 				7E6688811E1F12FF00D1F670 /* DrawYesButton.swift in Sources */,
