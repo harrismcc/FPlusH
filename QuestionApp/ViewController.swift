@@ -17,7 +17,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        loginButton.center = view.center
         
+        view.addSubview(loginButton)
+        
+        if let accessToken = AccessToken.current {
+            // User is logged in, use 'accessToken' here.
+            print("YOU ARE IN BOI")
+            print(accessToken)
+            
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
 
         FBSDKAppEvents.activateApp()
         
@@ -28,32 +39,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func LoginButton(_ sender: Any) {
-        let facebookLogin = FBSDKLoginManager()
-        print("Logging In")
-        facebookLogin.logIn(withReadPermissions: ["email","user_friends"], from: self, handler:{(facebookResult, facebookError) -> Void in
-            if facebookError != nil
-            {
-                print("Facebook login failed. Error  (facebookError)")
-            }
-                
-            else if (facebookResult?.isCancelled)!
-            {
-                print("Facebook login was cancelled.")
-            }
-                
-            else
-            {
-                print("You’re inz ;)")
-                
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            
-            
-        });    }
 
     
-
 
     @IBAction func bypassButtonPressed(_ sender: Any) {
         

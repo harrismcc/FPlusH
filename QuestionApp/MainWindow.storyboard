@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RQi-X3-9RN">
+            <objects>
+                <viewController storyboardIdentifier="mainView" id="RMd-7C-uf2" customClass="ViewController" customModule="QuestionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3rb-vy-a3c"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wd-jh-KIm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XZJ-tq-RlK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O98-md-D1b" customClass="DrawYesButton" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="398" width="157" height="35"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.12549019610000001" blue="0.078431372550000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AMn-cM-Oij"/>
+                                    <constraint firstAttribute="width" constant="157" id="PSc-1T-jOR"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="we3-rg-zmj" appends="YES" id="f5D-19-KHr"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-bv-MAU" customClass="DrawNoButton" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="193" y="398" width="157" height="35"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.12549019610000001" blue="0.078431372550000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="CC8-tE-aCl"/>
+                                    <constraint firstAttribute="height" constant="35" id="wuo-6O-Ir4"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jPH-TW-5sq" appends="YES" id="eJf-7S-RKe"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-YO-Jll" customClass="DrawQuestion" customModule="QuestionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="135" width="326" height="255"/>
+                                <color key="backgroundColor" red="0.83529411760000005" green="0.12549019610000001" blue="0.078431372550000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="HFg-nf-wDG"/>
+                                    <constraint firstAttribute="height" constant="255" id="jqI-mO-dcU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411760000005" green="0.12549019610000001" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F3M-bv-MAU" firstAttribute="leading" secondItem="O98-md-D1b" secondAttribute="trailing" constant="12" id="4ZE-6b-iWG"/>
+                            <constraint firstItem="F3M-bv-MAU" firstAttribute="top" secondItem="Zcv-YO-Jll" secondAttribute="bottom" constant="8" id="D9X-Y0-CFb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F3M-bv-MAU" secondAttribute="trailing" constant="9" id="DL9-v3-N6y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O98-md-D1b" secondAttribute="trailing" constant="178" id="G6V-Cm-VCQ"/>
+                            <constraint firstItem="O98-md-D1b" firstAttribute="top" secondItem="Zcv-YO-Jll" secondAttribute="bottom" constant="8" id="JKo-e5-XMF"/>
+                            <constraint firstItem="Zcv-YO-Jll" firstAttribute="centerX" secondItem="XZJ-tq-RlK" secondAttribute="centerX" id="b2c-fQ-aL8"/>
+                            <constraint firstItem="O98-md-D1b" firstAttribute="leading" secondItem="XZJ-tq-RlK" secondAttribute="leadingMargin" constant="8" id="vGS-Y6-BsN"/>
+                            <constraint firstItem="Zcv-YO-Jll" firstAttribute="top" secondItem="3rb-vy-a3c" secondAttribute="bottom" constant="115" id="w3b-GQ-zcz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DWs-rw-1JJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJz-BF-8or" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="we3-rg-zmj">
+                    <connections>
+                        <outlet property="delegate" destination="O98-md-D1b" id="n1y-1T-IIB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="jPH-TW-5sq"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="-8"/>
+        </scene>
+    </scenes>
+</document>
